@@ -66,17 +66,28 @@ $(function(){
     });
 
     // change color of happy birthday text
-    $('#red').on("mouseover", function(){
-        $('#seeker').css("color", "red");
+    $('#red1').on({
+        mouseenter: function(){
+            $('#seeker').css("color", "red");},
+        mouseleave: function(){
+            $('#seeker').css("color", "gray");
+        }
     });
-    $('#green').on("mouseover", function(){
-        $('#seeker').css("color", "green");
+    $('#green1').on({
+        mouseenter: function(){
+            $('#seeker').css("color", "green");},
+        mouseleave: function(){
+            $('#seeker').css("color", "gray");
+        }
     });
     
-    $('#blue').on("mouseover", function(){
-        $('#seeker').css("color", "blue");
+    $('#blue1').on({
+        mouseenter: function(){
+            $('#seeker').css("color", "blue");},
+        mouseleave: function(){
+            $('#seeker').css("color", "gray");
+        }
     });
-    
     
 
 });
